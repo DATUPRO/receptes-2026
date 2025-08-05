@@ -1,14 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+:root {
+    --primary: #ff7043;
+    --secondary: #ffe0b2;
+    --accent: #8d6e63;
+    --bg: #fff8f0;
+}
+
 body {
-    font-family: sans-serif;
-    background: #f2f2f2;
+    font-family: 'Quicksand', sans-serif;
+    background: var(--bg);
+    color: var(--accent);
     padding: 2rem;
     text-align: center;
 }
 
-#missatge {
+h1, h2, h3 {
+    color: var(--primary);
+    margin-bottom: 0.5em;
+    font-weight: 700;
+}
+
+.recepta {
     background: white;
-    padding: 2rem;
+    padding: 2.5rem 2rem;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px #ff704344;
+    font-size: 1.25rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    border: 2px solid var(--secondary);
+    transition: box-shadow 0.3s;
+}
+
+.recepta:hover {
+    box-shadow: 0 8px 32px #ff704366;
+}
+
+ul, ol {
+    text-align: left;
+    margin: 1.5em auto;
+    max-width: 500px;
+    background: var(--secondary);
+    padding: 1em 2em;
     border-radius: 10px;
-    box-shadow: 0 0 10px #ccc;
-    font-size: 1.5rem;
+    color: var(--accent);
+}
+
+button, .boto {
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75em 2em;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    margin-top: 1em;
+    transition: background 0.2s;
+}
+
+button:hover, .boto:hover {
+    background: #ff5722;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin: 1.5em 0;
+    box-shadow: 0 2px 12px #ff704322;
 }
