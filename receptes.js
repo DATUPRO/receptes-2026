@@ -348,33 +348,172 @@ const receptes = {
   13: {
     name: 'Xató del Vendrell',
     origen: 'Baix Penedès',
-    ingredients: [],
-    elavoracio: [],
-    imatge: '',
+    ingredients: [
+      [
+        'Per a la salsa:',
+        '100 g dametlles',
+        '80 g d’avellanes',
+        '½ ceba',
+        '½ cabeça d’alls',
+        '2 tomacons',
+        '1 nyora',
+        '1 llesca de pa',
+        '½ bitxo (opcional)',
+        '1 polsim de pebre negre',
+        'Pebre vermell dolç al gust',
+        'Sal',
+        'Oli d’oliva verge',
+        'Vinagre al gust'
+      ],
+      [
+        'Per al plat:',
+        '2 escaroles',
+        '4 filets d’anxova',
+        '120 g de bacallà esqueixat',
+        '120 g de tonyina',
+        '80 g d’olives arbequines'
+      ]
+    ],
+    elavoracio: [
+      'Escaliva els tomàquets, la ceba i els alls. Escalda la nyora i pela-la. Fregiu la llesca de pa i reserva-la.',
+      'Trinxa les ametlles i avellanes al morter i sal al gust. Forma una pasta fina.',
+      'Afegeix la ceba, la nyora, el pa fregit, els pebrots vermell i negre i, si vols, mig bitxo. Barreja bé.',
+      'Incorpora els alls i els tomàquets escalivats. Tritura fins obtenir una salsa homogènia i afegeix oli i vinagre al gust.',
+      'Barreja la salsa amb les escaroles a la nevera.',
+      'Serveix amb bacallà, tonyina, anxoves i olives arbequines.'
+    ],
+    imatge: 'imatges/13.png',
+    link: 'https://www.cuina.cat/receptes/xato-vendrell_10180986_117.html',
     id: 13
   },
   14: {
     name: 'Sopa de farigola',
     origen: 'Moianès',
-    ingredients: [],
-    elavoracio: [],
-    imatge: '',
+    ingredients: [
+      'Farigola fresca',
+      '4 llesques de pa',
+      'Oli d’oliva verge extra',
+      '1 l de brou de pollastre',
+      '4 rovells d’ou',
+      'Aigua mineral',
+      '125 g de salsa de soja',
+      '4 grans d’all',
+      '1 cullerada de llard de porc',
+      'Vi ranci',
+      'Sal'
+    ],
+    elavoracio: [
+      'Posar oli i llard en una paella. Talla els alls i fes-los “ballar” a la paella.',
+      'Afegeix el vi ranci i deixa que s’evapori l’alcohol.',
+      'Incorpora el brou de pollastre desgreixat i colat.',
+      'Afegeix la farigola i deixa bullir tot junt 10 minuts. Cola el brou i rectifica de sal.',
+      'En un recipient petit, barreja 125 g de soja amb 125 g d’aigua mineral i afegeix els 4 rovells d’ou crus. Deixa marinar 6 hores a la nevera.',
+      'Serveix el brou amb crostonets de pa, col·loca-hi el rovell marinat sobre el pa, afegeix branquetes de farigola fresca i un raig d’oli verge extra.'
+    ],
+    imatge: 'imatges/14.jpg',
+    link: 'https://www.3cat.cat/tv3/cuines/recepta/sopa-de-farigola/9150/',
     id: 14
   },
+
   15: {
     name: 'Escudella i carn d’olla',
     origen: 'Barcelonès, Moianès i Solsonès',
-    ingredients: [],
-    elavoracio: [],
-    imatge: '',
+    ingredients: [
+      [
+        'Per al brou:',
+        '7 litres d’aigua',
+        '500 g costella de vedella',
+        '500 g corder (codel de xai)',
+        '1 peu de porc fresc',
+        '2 cuixes de pollastre',
+        '400 g carcassa de pollastre',
+        '500 g gallina',
+        '300 g orella de porc',
+        '2 ossos salats de porc',
+        'Espinada de vedella o os de genoll',
+        '1 botifarra negra',
+        '1 botifarra de perol',
+        '1 nap gran o 2 mitjans',
+        '1 xirivia gran o 2 mitjanes',
+        '4-5 pastanagues grans',
+        '2 branques d’api',
+        '3 porros',
+        '3 patates grans',
+        '¼ de col',
+        '1 ceba',
+        '500 g cigrons crus (50 g per persona)',
+        'Sal al gust'
+      ],
+      [
+        'Per a la pilota i galets farcits:',
+        '500 g carn picada de vedella',
+        '500 g botifarra crua',
+        '80 galets grans',
+        '1 gra d’all',
+        'Julivert picat',
+        '1 ou',
+        '2 llesques de pa de motlle sense escorça',
+        '30 ml de llet',
+        'Pa ratllat',
+        '½ culleradeta nou moscada',
+        '½ culleradeta canyella en pols',
+        'Brandy',
+        'Pinyons',
+        'Farina',
+        'Sal i pebre'
+      ]
+    ],
+    elavoracio: [
+      'El dia abans: Poseu tota la carn en remull amb aigua i sal. Renteu els ossos per eliminar impureses i guardeu-ho a la nevera.',
+      'Remulleu els cigrons en aigua amb bicarbonat durant la nit.',
+      'Remulleu el pa en llet. Piqueu la botifarra, la carn de vedella, l’all i el julivert. Afegiu l’ou, les espècies, el brandy i el pa remullat.',
+      'Barregeu bé i afegiu pa ratllat fins obtenir una massa homogènia. Reserveu a la nevera.',
+      'El mateix dia: Escalfeu el forn a 250 °C i rostiu els ossos i carcasses durant 35 minuts, donant-los la volta a mitja cocció.',
+      'Col·loqueu els ossos rostits en una olla gran amb 5 litres d’aigua i porteu a ebullició, retirant l’escuma.',
+      'Afegiu la resta de carns i totes les hortalisses excepte patata, pastanaga i col. Bulliu, retirant escuma.',
+      'Passada una hora i mitja, retireu peus, orella, costella i cuixes de pollastre. Afegiu 2 litres d’aigua més i bulliu una altra hora i mitja.',
+      'Quan falti una hora per acabar, afegiu els cigrons escorreguts, la patata, la pastanaga i la col. Ajusteu de sal.',
+      'Formeu pilotes grans amb la massa de pilota i afegiu els pinyons. Enfarineu i poseu-les a l’olla.',
+      'Punxeu la botifarra negra i la de perol i afegiu-les senceres a l’olla. Coeu 10 minuts més.',
+      'Deixeu reposar el brou i retireu el greix solidificat per obtenir un brou més lleuger. Coleu-lo finament.',
+      'Precoeu els galets 15 minuts, escorreu-los i refresqueu-los amb aigua freda.',
+      'Ompliu els galets amb la massa de pilota restant.',
+      'Just abans de servir, bulliu els galets farcits 5 minuts al brou.'
+    ],
+    imatge: 'imatges/15.jpg',
+    link: 'https://www.casanoguera.com/ca/escudella-nadal/',
     id: 15
   },
   16: {
     name: 'Bacallà amb samfaina',
-    origen: 'Bages i Osona (comarques interiors)',
-    ingredients: [],
-    elavoracio: [],
-    imatge: '',
+    origen: 'Bages i Osona - comarques interiors',
+    ingredients: [
+      [
+        'Bacallà:',
+        '4 talls de morro de bacallà (dessalat)',
+        'Farina',
+        'Oli d\'oliva verge extra'
+      ],
+      [
+        'Per a la samfaina:',
+        'Pebrot vermell',
+        'Albergínia',
+        'Carbassó',
+        'Ceba',
+        'Tomàquet',
+        'Oli d’oliva verge extra',
+        'Sal',
+        'Sucre (una mica)',
+        '1 fulla de llorer'
+      ]
+    ],
+    elavoracio: [
+      'Samfaina: Sofregiu la ceba tallada petita. Afegiu-hi el pebrot, l’albergínia i el carbassó a daus i deixeu que coguin uns minuts. Incorporeu el tomàquet, el llorer i una mica de sucre. Feu-ho coure a foc lent fins que quedi una salsa ben confitada. (Opcional: fregir a part l’albergínia i el carbassó enfarinats per donar més textura cruixent.)',
+      'Bacallà: Assequeu els talls de bacallà, enfarineu-los i fregiu-los amb oli d’oliva fins que quedin daurats.',
+      'Final: Poseu la samfaina en una cassola amb una mica de l’oli de fregir el bacallà, afegiu-hi el bacallà i deixeu fer “xup-xup” 3-4 minuts.'
+    ],
+    imatge: 'imatges/16.jpg',
+    link: 'https://www.receptes.cat/recepta3749/bacalla_amb_samfaina',
     id: 16
   },
   17: {
