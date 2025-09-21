@@ -1,0 +1,86 @@
+.cookie-consent {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0,0,0,0.85);
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.cookie-consent p {
+    margin: 0;
+    font-size: 0.95em;
+}
+
+.cookie-consent button {
+    background-color: #2980b9;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cookie-consent button:hover {
+    background-color: #3498db;
+}
+
+.visitades-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 250px;
+    z-index: 999;
+}
+
+.visitades-container h2 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.visitades-container ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.visitades-container li {
+    margin-bottom: 5px;
+    font-size: 0.95em;
+}
+
+#receptesVisitades {
+    max-height: 400px; /* ajusta al que vulguis */
+    overflow-y: auto;
+    padding-left: 20px;
+}
+
+#receptesVisitades li {
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    min-height: 20px; /* alçada mínima */
+    display: flex;
+    align-items: center;
+}
+
+/* Element amb text real */
+#receptesVisitades li:not(:empty) {
+    background-color: #f0f0f0; /* gris clar */
+}
+
+/* Element buit que indica recepta no visitada */
+#receptesVisitades li:empty {
+    background-color: #d0d0d0; /* gris més fosc */
+}

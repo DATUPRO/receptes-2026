@@ -5,8 +5,13 @@
     <title>Recepta</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="estil.css">
+    <link rel="stylesheet" href="galetes.css">
 </head>
 <body>
+    <div id="cookieConsent" class="cookie-consent">
+        <p>He cuinat unes galetes amb gust a xocolata, t'agradaria provar-ne?</p>
+        <button id="acceptCookies">Acceptar</button>
+    </div>
     <div class="recepta">
         <h1 id="titol"></h1>
         <p id="origen"></p>
@@ -26,8 +31,14 @@
         </div>
         <img id="imatge" src="" alt="" width="300">
     </div>
+    <div id="receptesVisitadesContainer" class="visitades-container">
+        <h2>Receptes visitades:</h2>
+        <p id="text victoria"></p>
+        <ul id="receptesVisitades"></ul>
+    </div>
 
     <script src="receptes.js"></script>
     <script src="script.js"></script>
+    <script src="galetes.js"></script>
 </body>
 </html>
