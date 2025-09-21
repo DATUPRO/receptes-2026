@@ -1,72 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+/* estil.css */
 
-:root {
-    --primary: #ff7043;
-    --secondary: #ffe0b2;
-    --accent: #8d6e63;
-    --bg: #fff8f0;
+/* Reset bàsic */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
+/* Cos de la pàgina */
 body {
-    font-family: 'Quicksand', sans-serif;
-    background: var(--bg);
-    color: var(--accent);
-    padding: 2rem;
+    background-color: #ffffff; /* fons blanc */
+    color: #333; /* text fosc però suau */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Contenidor de la recepta */
+.recepta {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff; 
+}
+
+/* Títols */
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #2c3e50;
     text-align: center;
 }
 
-h1, h2, h3 {
-    color: var(--primary);
-    margin-bottom: 0.5em;
-    font-weight: 700;
+h2 {
+    font-size: 1.5em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+    color: #34495e;
 }
 
-.recepta {
-    background: white;
-    padding: 2.5rem 2rem;
-    border-radius: 18px;
-    box-shadow: 0 4px 24px #ff704344;
-    font-size: 1.25rem;
-    margin: 2rem auto;
-    max-width: 600px;
-    border: 2px solid var(--secondary);
-    transition: box-shadow 0.3s;
+/* Enllaços */
+a {
+    color: #2980b9;
+    text-decoration: none;
+    margin-bottom: 15px;
+    display: inline-block;
 }
 
-.recepta:hover {
-    box-shadow: 0 8px 32px #ff704366;
+a:hover {
+    text-decoration: underline;
 }
 
-ul, ol {
-    text-align: left;
-    margin: 1.5em auto;
-    max-width: 500px;
-    background: var(--secondary);
-    padding: 1em 2em;
+/* Ingredients i elaboració */
+#ingredients, #elavoracio, #notes {
+    margin-top: 10px;
+}
+
+#ingredients ul, #ingredients ol,
+#elavoracio ul, #elavoracio ol,
+#notes ul, #notes ol {
+    margin-left: 20px;
+}
+
+/* Espai entre items de les llistes */
+#ingredients ul li,
+#ingredients ol li,
+#elavoracio ul li,
+#elavoracio ol li,
+#notes ul li,
+#notes ol li {
+    margin-bottom: 10px;
+}
+
+/* Imatge */
+#imatge {
+    display: block;
+    margin: 25px auto 0;
     border-radius: 10px;
-    color: var(--accent);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-button, .boto {
-    background: var(--primary);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 0.75em 2em;
-    font-size: 1rem;
-    font-family: inherit;
-    cursor: pointer;
-    margin-top: 1em;
-    transition: background 0.2s;
-}
+/* Responsiu */
+@media screen and (max-width: 600px) {
+    .recepta {
+        padding: 15px;
+    }
 
-button:hover, .boto:hover {
-    background: #ff5722;
-}
+    h1 {
+        font-size: 1.5em;
+    }
 
-img {
-    max-width: 100%;
-    border-radius: 12px;
-    margin: 1.5em 0;
-    box-shadow: 0 2px 12px #ff704322;
+    h2 {
+        font-size: 1.2em;
+    }
+
+    #imatge {
+        width: 100%;
+    }
 }
