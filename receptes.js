@@ -4,7 +4,7 @@ const receptes = {
     origen: 'Carrer Sant Miquel, Rubí :P',
     ingredients: [],
     elavoracio: [],
-    imatge: 'imatges/1.jpeg',
+    imatge: 'imatges/1.jpg',
     id: 1
   },
   2: {
@@ -1167,3 +1167,4 @@ const receptes = {
     id: 30
   }
 };
+
