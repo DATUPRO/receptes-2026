@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const cookieConsent = document.getElementById("cookieConsent");
     const acceptBtn = document.getElementById("acceptCookies");
     const receptesVisitadesContainer = document.getElementById("receptesVisitadesContainer");
+    const toggleVisitades = document.getElementById("toggleVisitades");
 
     // Inicialment, amaguem la llista
     receptesVisitadesContainer.style.display = "none";
@@ -11,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cookieConsent.style.display = "none";
         receptesVisitadesContainer.style.display = "block";
     } else {
+        toggleVisitades.style.display = "none";
         cookieConsent.style.display = "flex";
     }
 
@@ -18,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     acceptBtn.addEventListener("click", () => {
         localStorage.setItem("galetesAcceptades", "true");
         cookieConsent.style.display = "none";
+        toggleVisitades.style.display = "block";
         receptesVisitadesContainer.style.display = "block";
 
         // Afegir la recepta actual a la llista si es passa per URL
@@ -76,4 +79,16 @@ document.addEventListener("DOMContentLoaded", () => {
     if (localStorage.getItem("galetesAcceptades") === "true") {
         mostrarReceptesVisitades();
     }
+});
+
+// Botó per desplegar/replegar el panell lateral
+document.addEventListener("DOMContentLoaded", () => {
+    const toggleBtn = document.getElementById("toggleVisitades");
+    const container = document.getElementById("receptesVisitadesContainer");
+
+    toggleBtn.addEventListener("click", () => {
+        container.classList.toggle("active");
+        // Canviar la fletxa segons estat
+        toggleBtn.textContent = container.classList.contains("active") ? "⟩" : "⟨";
+    });
 });
